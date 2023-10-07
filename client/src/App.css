@@ -1,27 +1,33 @@
-
-*,
-*::after,
-*::before {
-    box-sizing: border-box;
+.app {
+    background: url('./assets/unitygrid.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
-.header {
+header {
+    padding: 50px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
-.header__title {
-    font-size: 3rem;
+.main-header {
+    height: 30vh;
+    width: 85vw;
+    align-items: flex-end;
+    position: relative;
+    z-index: 1;
 }
 
-.header__button > button {
-    padding: 1em 2em;
-    background-color:aqua;
-    color: black;
-    border: none;
+.header-buttons {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
 }
 
-.container {
-    width: 85%;
-    margin: 0 auto;
+.header-buttons button {
+    margin-right: 20px;
+    margin-left: 20px;
 }
