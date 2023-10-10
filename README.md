@@ -2,9 +2,9 @@
 
 Submitted by: **Benjamin Jon**
 
-About this web app: **Shows nearby events**
+About this web app: **Shows nearby events in NYC**
 
-Time spent: **4** hours
+Time spent: **11** hours
 
 ## Required Features
 
@@ -12,13 +12,13 @@ The following **required** functionality is completed:
 
 <!-- Make sure to check off completed functionality below -->
 
-- [ ] **The web app uses React to display data from the API**
+- [X] **The web app uses React to display data from the API**
 - [X] **The web app is connected to a PostgreSQL database, with an appropriately structured Events table**
-  - [ ] **NOTE: Your GIF or a screenshot added to this README must include a view of your Railway database that shows the contents of the table used by your app**
-- [ ] **The web app displays the title of the app**
-- [ ] **A visual interface allows the user to select a Location they would like to view**
-- [ ] **Clicking on a Location shows a list of all items from the Events table that corresponds to that Location**
-- [ ] **Each Location detail page should have its own unique URL**
+  - [X] **NOTE: Your GIF or a screenshot added to this README must include a view of your Railway database that shows the contents of the table used by your app**
+- [X] **The web app displays the title of the app**
+- [X] **A visual interface allows the user to select a Location they would like to view**
+- [X] **Clicking on a Location shows a list of all items from the Events table that corresponds to that Location**
+- [X] **Each Location detail page should have its own unique URL**
 
 The following **optional** features are implemented:
 
@@ -33,7 +33,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<img src='https://i.imgur.com/KbKPtHp.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/FHYJdu3.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with LICEcap
 
