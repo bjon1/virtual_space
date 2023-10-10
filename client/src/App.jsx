@@ -12,29 +12,29 @@ const App = () => {
       element: <Locations />
     },
     {
-      path: '/queens',
-      element: <LocationEvents index={1} />
+      path: '/Queens',
+      element: <LocationEvents index={"Queens"} />
     },
     {
-      path: '/brooklyn',
-      element: <LocationEvents index={2} />
+      path: '/Brooklyn',
+      element: <LocationEvents index={"Brooklyn"} />
     },
     {
-      path: '/manhattan',
-      element: <LocationEvents index={3} />
+      path: '/Manhattan',
+      element: <LocationEvents index={"Manhattan"} />
     },
     {
-      path: '/statenisland',
-      element: <LocationEvents index={4} />
+      path: '/StatenIsland',
+      element: <LocationEvents index={"StatenIsland"} />
     },
     {
-      path: '/events',
-      element: <Events />
-    }
+      path: '/Bronx',
+      element: <LocationEvents index={"Bronx"} />
+    } 
   ])
 
   return (
-    <div className='app'>
+    <div className='app container'>
 
       <header className='main-header'>
         <h1>Virtual Community Space</h1>

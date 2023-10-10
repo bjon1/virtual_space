@@ -12,14 +12,15 @@ const read = async (req, res) => {
 const readById = async (req, res) => {
     try {
         const results = await Event.findOne(req.params.id)
-        res.status(200).json(results.rows)
+        res.status(200).json(results.rows[0])
     } catch (error) {
         res.status(400).json({error: error.message})
     }
 }
 
 
+
 export default {
     read,
-    readById
+    readById, 
 }

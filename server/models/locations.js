@@ -1,7 +1,7 @@
 import pool from '../config/database.js';
 
 const findAll = () => {
-    const query = 'SELECT * FROM location ORDER BY title ASC'
+    const query = 'SELECT * FROM location ORDER BY name ASC'
     return pool.query(query)
 }
 

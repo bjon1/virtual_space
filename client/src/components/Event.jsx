@@ -1,34 +1,24 @@
 import React, { useState, useEffect } from 'react'
 import '../css/Event.css'
 import EventsAPI from '../services/EventsAPI'
+import LocationsAPI from '../services/LocationsAPI'
 
-const Event = (props) => {
+const Event = ({event}) => {
 
-    const [event, setEvent] = useState({})
-
-    useEffect(() => {
-        (async () => {
-            try {
-                const eventData = await EventsAPI.getEventsById(props.id)
-                setEvent(eventData)
-                print("EVENT", event)
-            }
-            catch (error) {
-                throw error
-            }
-        }) ()
-    }, [])
 
     return (
         <article className='event-information'>
-            <img src={event.image} />
-
+            <h2>Hover to see the event</h2>
             <div className='event-information-overlay'>
-                <div className='text'>
-                    <h3>{event.title}</h3>
+                { event && 
+                (<div className='text'>
+                    <h3>{event.name}</h3>
                     <p><i className="fa-regular fa-calendar fa-bounce"></i> {event.date} <br /></p>
-                    <p id={`remaining-${event.id}`}></p>
-                </div>
+                    <p id={`remaining-${event.id}`}>{event.time}</p>
+                    <p>{event.description}</p>
+                    <p>{event.location}</p>
+                </div>)
+                }
             </div>
         </article>
     )

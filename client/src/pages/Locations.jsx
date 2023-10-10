@@ -1,20 +1,18 @@
 import React, { useState, useEffect } from 'react'
 import LocationsAPI from '../services/LocationsAPI'
 import '../css/Locations.css'
+import { Link } from 'react-router-dom';
 
 const Locations = () => {
 
     const [locations, setLocations] = useState([])
-    const [venueNames, setVenueNames] = useState({venue1: '', venue2: '', venue3: '', venue4: ''})
 
     useEffect(() => {
         (async () => {
             try {
                 const locationsData = await LocationsAPI.getAllLocations()
                 setLocations(locationsData)
-
-                setVenueNames({venue1: locationsData[0].name, venue2: locationsData[1].name, venue3: locationsData[2].name, venue4: locationsData[3].name})
-                setListeners()
+                console.log("LOCATIONS", locationsData)
             }
             catch (error) {
                 throw error
@@ -22,40 +20,23 @@ const Locations = () => {
         }) ()
     }, [])
 
-    const setListeners = () => {
-        const polygons = document.querySelectorAll('polygon')
-
-        polygons.forEach(element => {
-            element.addEventListener('mouseover', (event) => {
-                const buttonElement = document.getElementById(`${event.target.id}button`)
-                buttonElement.style.opacity = 1;
-            })
-
-            element.addEventListener('mouseleave', (event) => {
-                const buttonElement = document.getElementById(`${event.target.id}button`)
-                buttonElement.style.opacity = 0;
-            })
-        })
-    }
 
     return (
-        <div className='available-locations'>
-            <div id='venue1button' className='venue1-button-overlay'>
-                <button>{venueNames.venue1}</button>
-            </div>
-
-            <div id='venue2button' className='venue2-button-overlay'>
-                <button>{venueNames.venue2}</button>
-            </div>
-
-            <div id='venue3button' className='venue3-button-overlay'>
-                <button>{venueNames.venue3}</button>
-            </div>
-
-            <div id='venue4button' className='venue4-button-overlay'>
-                <button>{venueNames.venue4}</button>
-            </div>
-
+        <div className="locations">
+            {locations.map((location) => (
+                <Link to={`/${location.name}`} role='button'>
+                    <div className="location">
+                        <div className="card">
+                            <div className="name">
+                                {location.name}
+                            </div>
+                            <div className="description">
+                                {location.description}
+                            </div>
+                        </div>
+                    </div>
+                </Link>
+            ))}
         </div>
     )
 }

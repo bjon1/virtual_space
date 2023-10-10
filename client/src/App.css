@@ -8,3 +8,28 @@
 :root {
     font-size: 16px;
 }
+
+h1 {
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+    padding-bottom: 0;
+}
+
+.container {
+    width: 85%;
+}
+
+.main-header {
+    margin-bottom: 3rem;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 1em;
+    justify-content: flex-end;
+}
+
+a {
+    text-decoration: none;
+}
