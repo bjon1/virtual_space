@@ -2,7 +2,7 @@ import React from 'react'
 import { useRoutes, Link } from 'react-router-dom'
 import Locations from './pages/Locations'
 import LocationEvents from './pages/LocationEvents'
-import Events from './pages/Events'
+import Events from './components/Event'
 import './App.css'
 
 const App = () => {
@@ -12,19 +12,19 @@ const App = () => {
       element: <Locations />
     },
     {
-      path: '/echolounge',
+      path: '/queens',
       element: <LocationEvents index={1} />
     },
     {
-      path: '/houseofblues',
+      path: '/brooklyn',
       element: <LocationEvents index={2} />
     },
     {
-      path: '/pavilion',
+      path: '/manhattan',
       element: <LocationEvents index={3} />
     },
     {
-      path: '/americanairlines',
+      path: '/statenisland',
       element: <LocationEvents index={4} />
     },
     {
@@ -37,7 +37,7 @@ const App = () => {
     <div className='app'>
 
       <header className='main-header'>
-        <h1>UnityGrid Plaza</h1>
+        <h1>Virtual Community Space</h1>
 
         <div className='header-buttons'>
           <Link to='/' role='button'>Home</Link>

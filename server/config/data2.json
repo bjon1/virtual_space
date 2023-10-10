@@ -1,0 +1,28 @@
+[
+      {
+        "id": 1,
+        "name": "Manhattan",
+        "description": "Manhattan is the most densely populated of the five boroughs of New York City. It is known for its iconic skyline, including landmarks like the Empire State Building and Times Square. Manhattan is home to many cultural attractions, museums, and prestigious universities."
+      },
+      {
+        "id": 2,
+        "name": "Bronx",
+        "description": "The Bronx is known for its rich history and cultural diversity. It is home to the Bronx Zoo, the New York Botanical Garden, and Yankee Stadium. The borough has a vibrant arts scene and is famous for its hip-hop music and graffiti art."
+      },
+      {
+        "id": 3,
+        "name": "Brooklyn",
+        "description": "Brooklyn is a borough known for its trendy neighborhoods, diverse communities, and thriving arts scene. It offers beautiful parks like Prospect Park and Coney Island's boardwalk. Brooklyn is famous for its culinary scene and creative spirit."
+      },
+      {
+        "id": 4,
+        "name": "Queens",
+        "description": "Queens is the largest and most ethnically diverse borough in New York City. It boasts attractions such as Flushing Meadows-Corona Park, the USTA Billie Jean King National Tennis Center, and the Queens Museum. Queens is celebrated for its cultural festivals and food diversity."
+      },
+      {
+        "id": 5,
+        "name": "Staten Island",
+        "description": "Staten Island is known for its suburban charm and natural beauty. It offers parks like the Staten Island Greenbelt and the Staten Island Zoo. The Staten Island Ferry provides stunning views of the Statue of Liberty and Lower Manhattan."
+      }
+]
+  

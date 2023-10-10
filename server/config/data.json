@@ -1,0 +1,43 @@
+[
+    {
+      "id": 1,
+      "name": "Conference Keynote",
+      "date": "2023-10-15",
+      "time": "09:00 AM",
+      "description": "The opening keynote of the conference featuring renowned speakers.",
+      "location": "Manhattan",
+      "organizer": "TechCon Inc.",
+      "registration_required": true
+    },
+    {
+      "id": 2,
+      "name": "Networking Lunch",
+      "date": "2023-10-15",
+      "time": "12:30 PM",
+      "description": "An opportunity to network and enjoy a delicious lunch.",
+      "location": "Bronx",
+      "organizer": "TechCon Inc.",
+      "registration_required": false
+    },
+    {
+      "id": 3,
+      "name": "Workshop: AI and Machine Learning",
+      "date": "2023-10-16",
+      "time": "10:30 AM",
+      "description": "Hands-on workshop on AI and machine learning techniques.",
+      "location": "Brooklyn",
+      "organizer": "TechCon Inc.",
+      "registration_required": true
+    },
+    {
+      "id": 4,
+      "name": "Evening Reception",
+      "date": "2023-10-16",
+      "time": "06:00 PM",
+      "description": "A casual evening reception with live music and refreshments.",
+      "location": "Queens",
+      "organizer": "TechCon Inc.",
+      "registration_required": false
+    }
+]
+
